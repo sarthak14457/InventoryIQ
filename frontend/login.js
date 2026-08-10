@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
     successMsg.classList.add("show");
     setTimeout(() => {
       window.location.href =
-        "inventory.html?token=" + encodeURIComponent(data.token);
+        "index.html?token=" + encodeURIComponent(data.token);
     }, 600);
   } catch (err) {
     errorMsg.textContent = err.message;
