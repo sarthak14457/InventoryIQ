@@ -1,4 +1,4 @@
-const API_BASE = "https://inventoryiq-1-w22g.onrender.com//api";
+const API_BASE = "https://inventoryiq-1-w22g.onrender.com/api";
 
 const form = document.getElementById("signupForm");
 const errorMsg = document.getElementById("errorMsg");
