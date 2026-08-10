@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:3001/api";
+const API_BASE = "https://inventoryiq-1-w22g.onrender.com/api";
 const form = document.getElementById("loginForm");
 const errorMsg = document.getElementById("errorMsg");
 const successMsg = document.getElementById("successMsg");
