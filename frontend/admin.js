@@ -1,4 +1,4 @@
-const API_BASE = "https://inventoryiq-frontend.onrender.com";
+const API_BASE = "http://localhost:3001/api";
 
 const params = new URLSearchParams(window.location.search);
 const token = params.get("token");
