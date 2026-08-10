@@ -1,0 +1,227 @@
+:root {
+      --bg: #faf8f3;
+      --panel: #ffffff;
+      --ink: #2b2620;
+      --muted: #8a8175;
+      --line: #e4dfd3;
+      --accent: #3f6b52;
+      --accent-soft: #e7efe9;
+      --warn: #a4552c;
+      --warn-soft: #f6e6dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Courier New', Courier, monospace;
+      padding: 32px 16px;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    header .sub {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      margin-left: 14px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    nav a:hover {
+      color: var(--ink);
+    }
+
+    .stats {
+      display: flex;
+      gap: 18px;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .stats div span {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1.3fr 1.3fr 1fr 0.8fr auto;
+      gap: 10px;
+      align-items: end;
+    }
+
+    label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      font-family: inherit;
+      font-size: 14px;
+      background: #fffdf9;
+      color: var(--ink);
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border-radius: 3px;
+      border: 1px solid transparent;
+    }
+
+    .btn-add {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 9px 16px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .btn-add:hover {
+      opacity: .85;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: .5px;
+      font-weight: normal;
+    }
+
+    tr:hover td {
+      background: #fbfaf6;
+    }
+
+    select.roleSelect {
+      padding: 5px;
+      font-size: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .tag.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .tag.suspended {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+
+    .row-actions button {
+      background: none;
+      border: 1px solid var(--line);
+      padding: 5px 10px;
+      font-size: 11px;
+      margin-left: 4px;
+    }
+
+    .row-actions button:hover {
+      border-color: var(--ink);
+    }
+
+    .row-actions .del:hover {
+      border-color: var(--warn);
+      color: var(--warn);
+    }
+
+    .empty {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px 0;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 20px;
+    }
+
+    @media (max-width:640px) {
+      form {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stats {
+        display: none;
+      }
+    }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>InventoryIQ — Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="brand">
+      <h1>Stock Ledger</h1>
+      <div class="sub">Create an account to get started</div>
+    </div>
+
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required placeholder="Jane Doe">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="••••••••">
+        <div class="hint">At least 6 characters</div>
+      </div>
+      <div class="field">
+        <label for="confirm">Confirm password</label>
+        <input type="password" id="confirm" required placeholder="••••••••">
+      </div>
+      <div class="error" id="errorMsg">Check your details and try again.</div>
+      <button type="submit">Sign up</button>
+      <div class="success" id="successMsg">Account created — redirecting to log in...</div>
+    </form>
+
+    <div class="foot">
+      Already have an account? <a href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <script src="signup.js">
+  </script>
+
+</body>
+
+</html>
